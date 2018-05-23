@@ -1,0 +1,79 @@
+\documentclass[twocolumn,amsmath,amssymb, resi]{revtex4}
+\pdfoutput=1
+
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{epsfig}
+\usepackage{graphics}
+\usepackage{xcolor}
+
+\graphicspath{{figures/}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ii}{\item}
+\newcommand{\si}{\subitem}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\sub}{\subsection}
+\newcommand{\cm}{$\checkmark$}
+\newcommand{\lm}{$\boxdot$}
+\newcommand{\um}{$\square$}
+\newcommand{\todo}[1]{\textcolor{blue}{\textbf [to do: #1]}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Cryogenic Silicon Coating Test Facility}
+
+
+\author{
+ Gautam Venugopalan,
+Aaron Markowitz,
+Rana X. Adhikari,
+Geoffrey Lovelace}
+\vspace{1em}
+\affiliation{California Institute of Technology}
+
+ 
+\begin{abstract}
+
+This is a paper about the application of FEA models of thermal noise in mechanical oscillators to the problem of designing a general approach to optimal optomechanical force sensing. (these words are probably nonsense in this order but I think most of the right ones are here)
+
+\end{abstract}
+\pacs{??}
+
+\maketitle
+
+\section{Introduction}
+
+
+
+\section{Force Sensing}
+
+What is the ideal scale for optomechanical force sensors?
+
+\section{LIGO Suspension Thermal Noise}
+
+We would like to know how the suspension thermal noise scales with test mass size, which will allow us to choose an appropriate scale for various optomechanical add-ons that shape the IFO's quantum noise.
+
+\section{FEA and How It's Done}
+
+The big problem is the strain energy in thin (or microscopic) but lossy subdomains of a macroscopic oscillator. Geoffrey has some code that may be suitable for this, and there are some relatively new techniques for handling these problems with [ellipsoids? what?]
+
+\section{Results}
+
+We have a plot reproducing the aLIGO suspension thermal noise curve, which we can scale with test mass size.
+
+\section{Conclusions and Future Directions}
+
+We will apply this to optimize our ponderomotive squeezing and backaction evasion schemes.
+
+\section{Acknowledgements}
+
+
+
+\bibliographystyle{ieeetr}
+\bibliography{./bibliography/FEA} 
+
+\end{document}
